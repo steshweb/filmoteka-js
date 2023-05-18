@@ -44,6 +44,7 @@ function creatQueCol() {
       })
       .catch(console.log);
   }
+  filmListRef.innerHTML = '';
 }
 
 function creatWatchCol() {
@@ -58,6 +59,7 @@ function creatWatchCol() {
       })
       .catch(console.log);
   }
+  filmListRef.innerHTML = '';
 }
 function openModal(evt) {
   window.addEventListener('keydown', closeModalEsc);

@@ -126,6 +126,7 @@ function addWatched(evt) {
 
 function openModal(evt) {
   window.addEventListener('keydown', closeModalEsc);
+  console.log(evt.target);
 
   const filmId = Number(evt.target.dataset.id);
 

@@ -51,7 +51,6 @@ function creatCardMarkup({
   });
   const genrsStr = genrsArr.join(', ') || 'No ganres';
   const voteAverage = vote_average;
-  console.log(voteAverage);
 
   const markup = `
         <img src="https://image.tmdb.org/t/p/w500${poster_path}" class="modal-img" alt="${original_title}" loading="lazy">
