@@ -1,5 +1,17 @@
+.tui-pagination .tui-first-child.tui-is-selected {
+    border-left: 1px solid var(--accent-text-color) !important;
+}
+
+.tui-pagination .tui-is-selected, .tui-pagination strong {
+    background: var(--accent-text-color) !important;
+    border-color: var(--accent-text-color) !important; 
+}
+
+
+
 .main {
     background-color: var(--primary-text-color);
+    flex-grow: 1;
 }
 .film-list__item {
     margin-bottom: 20px;

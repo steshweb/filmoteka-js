@@ -1,3 +1,4 @@
+
 .backdrop {
     background-color: var(--modal-bg-color);
     position: fixed;
@@ -12,6 +13,7 @@
         opacity: 0;
         visibility: hidden;
         pointer-events: none;
+        
     }
 }
 .modal {
@@ -54,12 +56,12 @@
     text-transform: uppercase;
     margin-bottom: 20px;
 }
+
 .modal-list {
     margin-bottom: 20px;
 }
 .modal-list__item {
     display: flex;
-    justify-content: flex-start;
     align-items: baseline;
 
     &:not(:last-child) {
@@ -71,20 +73,11 @@
     font-weight: 500;
     font-size: 12px;
     line-height: 1.33;
+    flex-basis: 130px;
 }
 
-
-.modal-list__text_one {
-    margin-right: 41px;
-}
-.modal-list__text_two {
-    margin-right: 53px;
-}
-.modal-list__text_three {
-    margin-right: 39px;
-}
-.modal-list__text_four {
-    margin-right: 70px;
+.modal-list__box {
+    flex-basis: 200px;
 }
 
 .modal-list__vote {
@@ -97,7 +90,6 @@
 .modal-list__value_one {
     margin-left: 8px;
 }
-
 
 .modal-sub-title {
     margin-bottom: 8px;
@@ -162,6 +154,10 @@
         height: 44px;
         padding: 0;
     }
+    .modal-text {
+    max-height: 190px;
+    overflow: scroll;
+}
 }
 @media screen and (min-width: 1280px) {
     .modal {
@@ -183,7 +179,7 @@
     .modal-btn-box {
         position: absolute;
         margin-left: 0;
-        bottom: 84px;
+        bottom: 55px;
         right: 65px;
     }
 }

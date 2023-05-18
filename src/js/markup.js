@@ -60,29 +60,41 @@ function creatCardMarkup({
 
             <ul class="modal-list">
                 <li class="modal-list__item">
-                    <p class="modal-list__text modal-list__text_one">Vote / Votes</p>
-                    <span class="modal-list__vote">${vote_average.toFixed(
-                      1
-                    )}</span>
-                    <span class="modal-list__text">/</span>
-                    <span class="modal-list__value modal-list__value_one">${vote_count}</span>
+                    <p class="modal-list__text">Vote / Votes</p>
+
+                    <div class="modal-list__box">
+                      <span class="modal-list__vote">${vote_average.toFixed(
+                        1
+                      )}</span>
+                      <span class="modal-list__text">/</span>
+                      <span class="modal-list__value modal-list__value_one">${vote_count}</span>
+                    </div>
                 </li>
 
                 <li class="modal-list__item">
-                    <p class="modal-list__text modal-list__text_two">Popularity</p>
-                    <span class="modal-list__value">${popularity.toFixed(
-                      1
-                    )}</span>
+                    <p class="modal-list__text">Popularity</p>
+
+                    <div class="modal-list__box">
+                      <span class="modal-list__value">${popularity.toFixed(
+                        1
+                      )}</span>
+                    </div>
                 </li>
 
                 <li class="modal-list__item">
-                    <p class="modal-list__text  modal-list__text_three">Original Title</p>
-                    <span class="modal-list__value">${original_title}</span>
+                    <p class="modal-list__text">Original Title</p>
+
+                    <div class="modal-list__box">
+                      <span class="modal-list__value">${original_title}</span>
+                    </div>
                 </li>
 
                 <li class="modal-list__item">
-                    <p class="modal-list__text  modal-list__text_four">Genres</p>
-                    <span class="modal-list__value">${genrsStr}</span>
+                    <p class="modal-list__text">Genres</p>
+
+                    <div class="modal-list__box">
+                      <span class="modal-list__value">${genrsStr}</span>
+                    </div>
                 </li>
             </ul>
             <h3 class="modal-sub-title">About</h3>

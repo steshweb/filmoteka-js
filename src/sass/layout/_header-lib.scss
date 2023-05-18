@@ -1,9 +1,8 @@
 .header-lib {
     background-size: cover;
     background-position: center;
-    // padding: 40px 32px 60px;
     padding-top: 40;
-    padding-bottom: 60px;
+    padding-bottom: 50px;
 }
 .header-box-lib {
     display: flex;
@@ -48,7 +47,7 @@
         background-image: linear-gradient(rgba(0, 0, 0, 0.55),
                 rgba(0, 0, 0, 0.55)),
                 url('../images/header-lib-mob.jpg');
-        padding: 40px 20px 60px;
+        padding: 40px 20px 50px;
     }
 
     @media (min-device-pixel-ratio: 2),

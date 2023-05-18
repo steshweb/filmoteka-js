@@ -1,6 +1,7 @@
 .footer {
     background-color: var(--footer-bg-color);
     padding: 29px 36px;
+    flex-shrink: 0;
 }
 .footer-text {
     color: var(--footer-text-color);

@@ -11,51 +11,51 @@
     <link rel="stylesheet" href="./sass/index.scss" />
 </head>
 <body>
-    <header class="header-lib">
-        <div class="container">
-            <div class="header-box-lib">
-                <a href="./index.html" class="header-logo">
-                    <svg width="26" height="26" class="header-logo__icon">
-                        <use href="./images/sprite.svg#film-icon"></use>
-                    </svg>
-                    <span class="header-logo__text">Filmoteka</span>
-                </a>
-                
-                <ul class="nav-list">
-                    <li class="nav-list__item">
-                        <a href="./index.html" class="nav-list__link">Home</a>
-                    </li>
-                
-                    <li class="nav-list__item">
-                        <a href="./library.html" class="nav-list__link nav-list__link-active">my library</a>
-                    </li>
-                </ul>
+        <header class="header-lib">
+            <div class="container">
+                <div class="header-box-lib">
+                    <a href="./index.html" class="header-logo">
+                        <svg width="26" height="26" class="header-logo__icon">
+                            <use href="./images/sprite.svg#film-icon"></use>
+                        </svg>
+                        <span class="header-logo__text">Filmoteka</span>
+                    </a>
+                    
+                    <ul class="nav-list">
+                        <li class="nav-list__item">
+                            <a href="./index.html" class="nav-list__link">Home</a>
+                        </li>
+                    
+                        <li class="nav-list__item">
+                            <a href="./library.html" class="nav-list__link nav-list__link-active">my library</a>
+                        </li>
+                    </ul>
+                </div>
+    
+                <div class="header-btn-box">
+                    <button class="header-lib-btn js-watched-btn">Watched</button>
+                    <button class="header-lib-btn js-queue-btn">queue</button>
+                </div>
             </div>
-
-            <div class="header-btn-box">
-                <button class="header-lib-btn js-watched-btn">Watched</button>
-                <button class="header-lib-btn js-queue-btn">queue</button>
+        </header>
+    
+        <main class="main">
+            <div class="container">
+                <ul class="film-list"></ul>
             </div>
-        </div>
-    </header>
-
-    <main class="main">
-        <div class="container">
-            <ul class="film-list"></ul>
-        </div>
-        <ul class="btn-list"></ul>
-    </main>
-
-    <footer class="footer">
-        <p class="footer-text">&#169; 2023 | All Rights Reserved |</p>
-        <div class="footer-box">
-            <p class="footer-content">Developed with</p>
-            <svg class="footer-icon" width="14" height="14">
-                <use href="./images/sprite.svg#favorite-icon"></use>
-            </svg>
-            <a class="footer-link" href="#">by <span class="footer-link__line">GoIT Students</span></a>
-        </div>
-    </footer>
+            <ul class="btn-list"></ul>
+        </main>
+    
+        <footer class="footer">
+            <p class="footer-text">&#169; 2023 | All Rights Reserved |</p>
+            <div class="footer-box">
+                <p class="footer-content">Developed with</p>
+                <svg class="footer-icon" width="14" height="14">
+                    <use href="./images/sprite.svg#favorite-icon"></use>
+                </svg>
+                <a class="footer-link" href="#">by <span class="footer-link__line">GoIT Students</span></a>
+            </div>
+        </footer>
 
     <div class="backdrop is-hidden">
         <div class="modal">
