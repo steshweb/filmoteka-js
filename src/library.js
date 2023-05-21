@@ -16,8 +16,8 @@ const backdropRef = document.querySelector('.backdrop');
 const closeModalBtn = document.querySelector('.modal-close__btn');
 const modalBoxRef = document.querySelector('.modal-box');
 
-btnQueueColRef.addEventListener('click', creatQueCol);
-btnWatchedColRef.addEventListener('click', creatWatchCol);
+btnQueueColRef.addEventListener('click', createQueueCollection);
+btnWatchedColRef.addEventListener('click', createWarchedCollection);
 filmListRef.addEventListener('click', openModal);
 closeModalBtn.addEventListener('click', closeModal);
 btnRemoveWatchedRef.addEventListener('click', removeFilmWatched);
@@ -29,9 +29,9 @@ backdropRef.addEventListener('click', evt => {
   }
 });
 
-creatWatchCol();
+createWarchedCollection();
 
-function creatQueCol() {
+function createQueueCollection() {
   btnQueueColRef.classList.add('header-lib-btn_active');
   btnWatchedColRef.classList.remove('header-lib-btn_active');
 
@@ -47,7 +47,7 @@ function creatQueCol() {
   filmListRef.innerHTML = '';
 }
 
-function creatWatchCol() {
+function createWarchedCollection() {
   btnQueueColRef.classList.remove('header-lib-btn_active');
   btnWatchedColRef.classList.add('header-lib-btn_active');
   const filmsWatched = JSON.parse(localStorage.getItem(WATCHED_LOCAL));
@@ -106,7 +106,7 @@ function removeFilmWatched(evt) {
       const idxOf = arrW.indexOf(id);
       arrW.splice(idxOf, 1);
       localStorage.setItem(WATCHED_LOCAL, JSON.stringify(arrW));
-      creatWatchCol();
+      createWarchedCollection();
       Notify.success('Movie removed from Watched');
       closeModal();
       return;
@@ -125,7 +125,7 @@ function removeFilmQueue(evt) {
       arrQ.splice(idxOf, 1);
       localStorage.setItem(QUEUE_LOCAL, JSON.stringify(arrQ));
       Notify.success('Movie removed from Queue');
-      creatQueCol();
+      createQueueCollection();
       closeModal();
       return;
     }

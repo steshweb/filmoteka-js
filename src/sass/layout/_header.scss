@@ -75,7 +75,7 @@
     border-bottom: solid 0.5px var(--primary-text-color);
     width: 280px;
     &::placeholder {
-        color: var(--primary-text-color);
+        color: var(--modal-text-color);
     }
 }
 .header-form__btn {

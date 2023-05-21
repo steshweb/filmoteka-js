@@ -23,10 +23,15 @@ function creatMarkup(items) {
       }
       const genrsStr = genrsArr.join(', ') || 'No ganres';
       return `
-        <li class="film-list__item">
-          <img src="https://image.tmdb.org/t/p/w500${poster_path}" alt="${title}" class="film-list__img" data-id="${id}">
-          <h2 class="film-list__title">${title}</h2>
-          <p class="film-list__text">${genrsStr}</p>
+        <li class="film-list__item" data-id="${id}">
+          <img 
+            src="https://image.tmdb.org/t/p/w500${poster_path}" 
+            alt="${title}" 
+            class="film-list__img"
+            data-id="${id}"
+          >
+          <h2 class="film-list__title" data-id="${id}">${title}</h2>
+          <p class="film-list__text" data-id="${id}">${genrsStr}</p>
         </li>
         `;
     })

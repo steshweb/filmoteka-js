@@ -30,6 +30,7 @@
     line-height: 1.33;
     text-transform: uppercase;
     cursor: pointer;
+    transition: border-color 300ms;
     &:first-child {
         margin-right: 20px;
     }
