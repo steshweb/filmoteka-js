@@ -6,7 +6,8 @@ function creatMarkup(items) {
   const genresLocal = JSON.parse(localStorage.getItem(GENERS_LOCAL));
 
   const markup = elements
-    .map(({ title, poster_path, id, genre_ids, genres }) => {
+    .map(({ title, poster_path, id, genre_ids, genres, release_date }) => {
+      
       const genrsArr = [];
       if (genre_ids) {
         genre_ids.forEach(id => {
@@ -21,6 +22,7 @@ function creatMarkup(items) {
           genrsArr.push(el.name);
         });
       }
+      const date = release_date.split('-')[0];
       const genrsStr = genrsArr.join(', ') || 'No ganres';
       return `
         <li class="film-list__item" data-id="${id}">
@@ -30,10 +32,11 @@ function creatMarkup(items) {
             class="film-list__img"
             data-id="${id}"
           >
+
           <h2 class="film-list__title" data-id="${id}">${title}</h2>
-          <p class="film-list__text" data-id="${id}">${genrsStr}</p>
+          <p class="film-list__text" data-id="${id}">${genrsStr} | ${date}</p>
         </li>
-        `;
+      `;
     })
     .join('');
   return markup;
@@ -103,6 +106,7 @@ function creatCardMarkup({
             </ul>
             <h3 class="modal-sub-title">About</h3>
             <p class="modal-text">${overview}</p>
+            
         </div>
     `;
   return markup;
