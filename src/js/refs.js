@@ -1,0 +1,18 @@
+export const refs = {
+  filmList: document.querySelector('.film-list'),
+  backdrop: document.querySelector('.backdrop'),
+  closeModalBtn: document.querySelector('.modal-close__btn'),
+  modalBox: document.querySelector('.modal-box'),
+  searchForm: document.querySelector('.header-form'),
+  searchFormText: document.querySelector('.header-form__text'),
+  modalBtns: document.querySelectorAll('.modal-btn'),
+  modalBtnWatched: document.querySelector('button[data-watched]'),
+  modalBtnQueue: document.querySelector('button[data-queue]'),
+  inputSearch: document.querySelector('input[name="searchFilm"]'),
+  container: document.getElementById('tui-pagination-container'),
+  btnWatchedCol: document.querySelector('.js-watched-btn'),
+  btnQueueCol: document.querySelector('.js-queue-btn'),
+  btnRemoveWatched: document.querySelector('button[data-watched]'),
+  btnRemoveQueue: document.querySelector('button[data-queue]'),
+  modalBtns: document.querySelectorAll('.modal-btn'),
+}
